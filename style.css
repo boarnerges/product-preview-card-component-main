@@ -14,7 +14,7 @@ html:focus-within {
   
   /* Set core body defaults */
   body {
-    min-height: 100vh;
+    max-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
   }
@@ -63,16 +63,27 @@ dd {
 
 body{
     background-color: hsl(30, 38%, 92%);
-    margin: 100px auto;
+   
     font-family: 'Montserrat', sans-serif;
+  
 }
+
+
 .container{
     width: 80%;
     max-width: 375px;
     border-radius: 10px;
     margin: 0 auto;
     background-color: hsl(0, 0%, 100%);
+       
 }
+/* .center {
+ display:flex;
+ justify-content: center;
+ align-items:center;
+} */
+
+
 
 h1{
     font-family: 'Fraunces', serif;

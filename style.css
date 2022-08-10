@@ -178,11 +178,14 @@ p{
 
  
     .container{
+
+        /********* GRID SOLUTION *********/
         /* display:grid;
         grid-template-columns: 300px 300px;
         grid-template-rows: 450px;
         height: 100%;    */
 
+        /********* FLEX SOLUTION *********/
         display:flex;
         mid-height: 100vh;
         justify-content: center;

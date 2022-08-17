@@ -72,9 +72,9 @@ body{
 .container{
     width: 80%;
     max-width: 375px;
-    border-radius: 10px;
+    
     /* margin: 0 auto; */
-    background-color: hsl(0, 0%, 100%);
+   
        
 }
 /* .center {
@@ -98,6 +98,8 @@ h1{
 
 .details{
     padding: 25px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
 }
 
 .details > p:first-child  {
@@ -180,20 +182,21 @@ p{
     .container{
 
         /********* GRID SOLUTION *********/
-        /* display:grid;
+        display:grid;
         grid-template-columns: 300px 300px;
         grid-template-rows: 450px;
-        height: 100%;    */
+        height: 100%;    
+        max-width: 540px;
 
         /********* FLEX SOLUTION *********/
-        display:flex;
+        /* display:flex;
         mid-height: 100vh;
         justify-content: center;
         max-width: 1440px;
         /* width: 600px; */
-        border-radius: 10px;
+        /* border-radius: 10px; */
         /* margin: 0 auto; */
-        background-color: hsl(0, 0%, 100%);
+        /* background-color: hsl(0, 0%, 100%); */ */
         
     }
     .details{

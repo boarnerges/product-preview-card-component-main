@@ -60,6 +60,7 @@ body{
     display:flex;
     flex-direction:column; 
     max-width: 300px;
+    height: 80%;
 }
 
 .hero1{
@@ -75,10 +76,9 @@ h1{
 }
 
 .details{
-    padding: 25px;
+    padding: 30px;
     background-color: hsl(0, 0%, 100%);
     border-radius:  0 0 10px 10px;
-    height: 70%;
 }
 
 .details > p:first-child  {
@@ -135,7 +135,7 @@ p{
 
 
 
-@media (min-width: 440px){
+@media (min-width: 800px){
 
     .wrapper{  
         display:flex;

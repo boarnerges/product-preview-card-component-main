@@ -27,22 +27,6 @@ select {
   font: inherit;
 }
 
-/* Remove default margin and padding */
-body,
-h1,
-h2,
-
-h4,
-
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-  padding: 0;
-}
-
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -63,31 +47,23 @@ dd {
 
 body{
     background-color: hsl(30, 38%, 92%);
-   
-    font-family: 'Montserrat', sans-serif;
-  
-}
-
-
-.container{
-    width: 80%;
-    max-width: 375px;
-    
-    /* margin: 0 auto; */
-   
-       
-}
-/* .center {
- display:flex;
- justify-content: center;
- align-items:center;
-} */
-
-.center{
-    display: flex;
+    font-family: 'Montserrat', sans-serif; 
+    display:flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items:center;   
+    min-width: 375px;
+}
+
+
+.container{   
+    display:flex;
+    flex-direction:column; 
+}
+
+.hero1{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
 }
 
 h1{
@@ -99,18 +75,13 @@ h1{
 .details{
     padding: 25px;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
+    border-radius:  0 0 10px 10px;
 }
 
 .details > p:first-child  {
     letter-spacing: 6.5px;
-    padding: 0px;
-    margin: 0px;
 }
-.hero1{
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
+
 .hero2{
     display:none;
 }
@@ -125,7 +96,6 @@ h1{
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
     border-radius: 10px;
-   
     text-align: center;
     margin: 5px 0;    
 }
@@ -153,7 +123,7 @@ p{
     color: hsl(228, 12%, 48%);
     font-weight: 500;
 }
-.cart > h5 {
+.cart h5 {
     color: hsl(228, 12%, 48%);
     font-weight: 500;
     margin:0;
@@ -162,57 +132,43 @@ p{
 
 
 
-@media (min-width: 1440px){
+@media (min-width: 440px){
 
-    /* body{
-        margin: 200px auto;
-    
-    } */
+    .wrapper{  
+        display:flex;
+        flex-direction:column; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container{
+        flex-direction:row; 
+        max-width: 600px;
+    }
+   
     .hero1{
         display: none;
       }
    
       .hero2{
         display: block;
-        width: 100%;
         border-radius: 10px 0 0 10px;
+        min-width: 300px;
       }
 
- 
-    .container{
-
-        /********* GRID SOLUTION *********/
-        display:grid;
-        grid-template-columns: 300px 300px;
-        grid-template-rows: 450px;
-        height: 100%;    
-        max-width: 540px;
-
-        /********* FLEX SOLUTION *********/
-        /* display:flex;
-        mid-height: 100vh;
-        justify-content: center;
-        max-width: 1440px;
-        /* width: 600px; */
-        /* border-radius: 10px; */
-        /* margin: 0 auto; */
-        /* background-color: hsl(0, 0%, 100%); */ */
-        
-    }
     .details{
-        width: 100%;
-      
+        min-width: 300px;
     }
 
-    .num_flex{
-               
+    .num_flex{ 
         width: 100%;
     }
+
     .btn{
         margin: 0;
     }
-    
 
-   
-
+    .attribution{
+        text-align: center;
+    }
 }

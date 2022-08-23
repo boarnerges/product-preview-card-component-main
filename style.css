@@ -60,6 +60,7 @@ body{
     display:flex;
     flex-direction:column; 
     min-width: 375px;
+    margin: 50px 0;
 }
 
 .hero1{

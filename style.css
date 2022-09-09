@@ -66,7 +66,7 @@ body{
 .hero1 {
     display: block;
     background-size: center;
-    width: 375px;
+    width: 300px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -76,7 +76,7 @@ h1{
     font-family: 'Fraunces', serif;
     font-weigt: 700;
     line-height: 1.0;
-    font-size: 40px;
+    font-size: 27px;
     padding-top: 0;
     margin-top: 0;
 }
@@ -85,13 +85,17 @@ h1{
     padding: 30px;
     background-color: hsl(0, 0%, 100%);
     border-radius:  0 0 10px 10px;
-    width: 375px;
+    width: 300px;
 }
 
 .details > p:first-child  {
     letter-spacing: 6px;
     padding: 0;
     margin: 0;
+}
+
+.details > p{
+    color: hsl(228, 12%, 48%);
 }
 
 .hero2{
@@ -121,7 +125,7 @@ h1{
 .num{
     color: hsl(158, 36%, 37%);
     font-weight: 700;
-    font-size: 40px;
+    font-size: 27px;
     font-family: 'Fraunces', serif;
 }
 
@@ -132,15 +136,15 @@ h1{
 }
 
 p{
-    font-size: 17px;
-    color: hsl(228, 12%, 48%);
+    font-size: 14px;
     font-weight: 500;
 }
-.cart h5 {
-    color: hsl(228, 12%, 48%);
+.cart p{
+    color: white;
     font-weight: 500;
     margin:0;
     padding:0;
+    font-size: 1px;
 }
 
 
@@ -152,6 +156,12 @@ p{
         flex-direction:row; 
          width: 600px; 
          align-items: stretch;
+      }
+
+      h1{
+        font-size: 40px;
+        margin-top: 26.8px;
+        
       }
    
     .hero1{
@@ -171,6 +181,6 @@ p{
         }
 
         .num_flex{
-            width: 100%;
+            margin: 10px 0;
         }
 }

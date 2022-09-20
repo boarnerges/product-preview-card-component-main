@@ -1,5 +1,5 @@
 /*------------------------------- CSS RESET--------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -9,17 +9,18 @@
 
 /* Set core root defaults */
 html:focus-within {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  
-  /* Set core body defaults */
-  body {
-    height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-  }
-  
+/* Set core body defaults */
+body {
+  height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -31,9 +32,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -46,139 +47,130 @@ select {
 
 /*------------------------------- GENERAL STYLE --------------------------------*/
 
-body{
-    background-color: hsl(30, 38%, 92%);
-    font-family: 'Montserrat', sans-serif; 
-    display:flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.container{   
-    display:flex;
-    flex-direction:column; 
-    justify-content: center;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero1 {
+  display: block;
+  background-size: center;
+  width: 300px;
+  border-radius: 10px 10px 0 0;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weigt: 700;
+  line-height: 1;
+  font-size: 27px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.details {
+  padding: 30px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 10px 10px;
+  width: 300px;
+}
+
+.details > p:first-child {
+  letter-spacing: 6px;
+  padding: 0;
+  margin: 0;
+}
+
+.details > p {
+  color: hsl(228, 12%, 48%);
+}
+
+.hero2 {
+  display: none;
+}
+
+.num_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.cart-img,
+.cart {
+  display: inline-block;
+}
+
+.num {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 27px;
+  font-family: "Fraunces", serif;
+}
+
+.discount {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.cart p {
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    width: 600px;
+    align-items: stretch;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 26.8px;
+  }
+
+  .hero1 {
+    display: none;
+  }
+
+  .hero2 {
     display: block;
-    background-size: center;
+    border-radius: 10px 0 0 10px;
     width: 300px;
-    border-radius: 10px 10px 0 0;
-}
+  }
 
-
-
-h1{
-    font-family: 'Fraunces', serif;
-    font-weigt: 700;
-    line-height: 1.0;
-    font-size: 27px;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.details{
-    padding: 30px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius:  0 0 10px 10px;
+  .details {
     width: 300px;
-}
+    border-radius: 0 10px 10px 0;
+  }
 
-.details > p:first-child  {
-    letter-spacing: 6px;
-    padding: 0;
-    margin: 0;
-}
-
-.details > p{
-    color: hsl(228, 12%, 48%);
-}
-
-.hero2{
-    display:none;
-}
-
-.num_flex{
-    display:flex;
-    justify-content: space-between;
-    width: 80%;
-    align-items: center;
-}
-
-.btn{
-    background-color: hsl(158, 36%, 37%);
-    color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    text-align: center;
-    margin: 5px 0;    
-}
-
-.cart-img, .cart{
-    display: inline-block;
-}
-
-
-.num{
-    color: hsl(158, 36%, 37%);
-    font-weight: 700;
-    font-size: 27px;
-    font-family: 'Fraunces', serif;
-}
-
-.discount{    
-    text-decoration: line-through; 
-    color: hsl(228, 12%, 48%);
-}
-
-p{
-    font-size: 14px;
-    font-weight: 500;
-}
-.cart p{
-    color: white;
-    font-weight: 500;
-    margin:0;
-    padding:0;
-    font-size: 1px;
-}
-
-
-
-@media (min-width: 768px){ 
-
- 
-    .container{
-        flex-direction:row; 
-         width: 600px; 
-         align-items: stretch;
-      }
-
-      h1{
-        font-size: 40px;
-        margin-top: 26.8px;
-        
-      }
-   
-    .hero1{
-        display: none;
-      }
-   
-      .hero2{
-        display: block;
-        border-radius: 10px 0 0 10px;
-        width: 300px; 
-             
-      }
-
-        .details{
-            width: 300px;
-            border-radius: 0 10px 10px 0;
-        }
-
-        .num_flex{
-            margin: 10px 0;
-        }
+  .num_flex {
+    margin: 10px 0;
+  }
 }
